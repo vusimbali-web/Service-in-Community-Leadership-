@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Get in Touch</h2>
+            <form action="/submit_contact" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="inquiry">Inquiry Type:</label>
+                <select id="inquiry" name="inquiry">
+                    <option value="book_signing">Book Signing</option>
+                    <option value="speaking_engagement">Speaking Engagement</option>
+                    <option value="partnership">Partnership</option>
+                </select>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section>
+            <h2>Follow Us</h2>
+            <ul>
+                <li><a href="mailto:info@vusimbali.com">Email Us</a></li>
+                <li><a href="https://www.facebook.com/vusimbali">Facebook</a></li>
+                <li><a href="https://www.twitter.com/vusimbali">Twitter</a></li>
+                <li><a href="https://www.instagram.com/vusimbali">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/vusimbali">LinkedIn</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Vusimbali Web. All rights reserved.</p>
+    </footer>
+</body>
+</html>
